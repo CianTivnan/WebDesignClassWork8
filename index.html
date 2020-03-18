@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!--Author - Cian Tivnan S00198481
+	Date - 18/03/20	
+	Page Description - Week 8 assignment
+-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Form Test">
+	<meta name="keywords" content="Form">
+	<meta name="author" content="Cian Tivnan">
+	<title>Form Test</title>
+	<link rel="stylesheet" type="text/css" href="styles/mainStyles.css"/>
+</head>
+
+<body>
+	
+	<header>
+		<p>Any queries or feedback please complete and submit</p>
+    </header>  
+
+    
+    <main>
+        
+        <section>
+            <h3>Please enter the following information:</h3>
+            
+            <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+            
+                <label for="first_name">First Name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+            
+                <label for="last_name">Last Name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                
+                <label for="email">Email Address:<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+                <br>
+                
+                <label for="gender">Gender :</label>
+                <input type="radio" name="gender" class="gender" value="male"> Male
+                <input type="radio" name="gender" class="gender" value="female"> Female
+                <input type="radio" id="gender" name="gender" class="gender" value="other" checked> Other <br>
+                
+                <label for="internet">Heard of us:</label>
+                <fieldset>
+                <input type="checkbox" id="internet" name="internet" value="internet" checked> Internet <br>
+                <input type="checkbox" class="hear" name="paper" value="paper" > Paper <br>
+                <input type="checkbox" class="hear" name="friend" value="friend" > Friend <br>
+                <input type="checkbox" class="hear" name="Other" value="Other" > Other <br>
+                </fieldset>
+                
+                <label for="message">Query : </label>
+                
+                <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea> <br>
+                
+                <input type="submit" name="submit" id="button" value="submit">
+                <input type="reset" name="reset" id="reset">
+            </form>
+            <p style="margin-left: 138px"><span class="required">*</span><em> indicates a required field</em></p>
+        </section>
+        
+        
+    </main>
+
+    
+    
+    
+        
+    
+
+    
+	<footer>
+        <p>Copyright 2020 Cian Tivnan</p>
+	</footer>
+
+</body>
+</html>
